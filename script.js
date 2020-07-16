@@ -60,53 +60,68 @@ var numbersChar = dataV1.numbers[numbersRandom];
 var specialChar = dataV1.special[specialRandom];
 
 
-// User selected the following: Lowercase
-var characterSelectionArray = [lowerCaseChar];
+// Based on what the user assembled, create an array of those random characters
 
 // User selected the following: Uppercase
-var characterSelectionArray = [upperCaseChar];
-
+if (userWantUpperCase === true) {
+    var characterSelectionArray = [upperCaseChar];
+}
+// User selected the following: Lowercase
+else if (userWantLowerCase === true) {
+    var characterSelectionArray = [lowerCaseChar];    
+}
 // User selected the following: Numeric
-var characterSelectionArray = [numbersChar];
-
+else if (userWantNumbers === true) {
+    var characterSelectionArray = [numbersChar];
+}
 // User selected the following: Special Characters
-var characterSelectionArray = [specialChar];
-
+else if (userWantSpecial === true) {
+    var characterSelectionArray = [specialChar];    
+}
 // User selected the following: Lowercase, Uppercase
-var characterSelectionArray = [upperCaseChar, lowerCaseChar];
-
+else if (userWantUpperCase === true && userWantLowerCase === true) {
+    var characterSelectionArray = [upperCaseChar, lowerCaseChar];    
+}
 // User selected the following: Lowercase, Numeric
-var characterSelectionArray = [lowerCaseChar, numbersChar];
-
+else if (userWantLowerCase === true && userWantNumbers === true) {
+    var characterSelectionArray = [lowerCaseChar, numbersChar];    
+}
 // User selected the following: Lowercase, Special Characters
-var characterSelectionArray = [lowerCaseChar, specialChar];
-
+else if (userWantLowerCase === true && userWantSpecial === true) {
+    var characterSelectionArray = [lowerCaseChar, specialChar];    
+}
 // User selected the following: Uppercase, Numeric
-var characterSelectionArray = [upperCaseChar, numbersChar];
-
+else if (userWantUpperCase === true && userWantNumbers === true) {
+    var characterSelectionArray = [upperCaseChar, numbersChar];    
+}
 // User selected the following: Uppercase, Special Characters
-var characterSelectionArray = [upperCaseChar, specialChar];
-
+else if (userWantUpperCase === true && userWantSpecial === true) {
+    var characterSelectionArray = [upperCaseChar, specialChar];    
+}
 // User selected the following: Numeric, Special Characters
-var characterSelectionArray = [numbersChar, specialChar];
-
+else if (userWantNumbers === true && userWantSpecial === true) {
+    var characterSelectionArray = [numbersChar, specialChar];    
+}
 // User selected the following: Lowercase, Uppercase, Numeric
-var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar];
-
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === true) {
+    var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar];    
+}
 // User selected the following: Lowercase, Uppercase, Special Characters
-var characterSelectionArray = [upperCaseChar, lowerCaseChar, specialChar];
-
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantSpecial === true) {
+    var characterSelectionArray = [upperCaseChar, lowerCaseChar, specialChar];    
+}
 // User selected the following: Lowercase, Numeric, Special Characters
-var characterSelectionArray = [lowerCaseChar, numbersChar, specialChar];
-
+else if (userWantLowerCase === true && userWantNumbers === true && userWantSpecial === true) {
+    var characterSelectionArray = [lowerCaseChar, numbersChar, specialChar];    
+}
 // User selected the following: Uppercase, Numeric, Special Characters
-var characterSelectionArray = [upperCaseChar, numbersChar, specialChar];
-
+else if (userWantUpperCase === true && userWantNumbers === true && userWantSpecial === true) {
+    var characterSelectionArray = [upperCaseChar, numbersChar, specialChar];    
+}
 // User selected the following: Lowercase, Uppercase, Numeric, Special Characters
-var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar, specialChar];
-
-
-
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === true && userWantSpecial === true) {
+    var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar, specialChar];    
+}
 
 // This function below will generate a random whole number within a range
 // The range corresponds to the possible index values of the variables in question
