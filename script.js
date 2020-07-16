@@ -63,59 +63,59 @@ var specialChar = dataV1.special[specialRandom];
 // Based on what the user assembled, create an array of those random characters
 
 // User selected the following: Uppercase
-if (userWantUpperCase === true) {
+if (userWantLowerCase === false && userWantUpperCase === true && userWantNumbers === false && userWantSpecial === false) {
     var characterSelectionArray = [upperCaseChar];
 }
 // User selected the following: Lowercase
-else if (userWantLowerCase === true) {
+else if (userWantLowerCase === true && userWantUpperCase === false && userWantNumbers === false && userWantSpecial === false) {
     var characterSelectionArray = [lowerCaseChar];    
 }
 // User selected the following: Numeric
-else if (userWantNumbers === true) {
+else if (userWantLowerCase === false && userWantUpperCase === false && userWantNumbers === true && userWantSpecial === false) {
     var characterSelectionArray = [numbersChar];
 }
 // User selected the following: Special Characters
-else if (userWantSpecial === true) {
+else if (userWantLowerCase === false && userWantUpperCase === false && userWantNumbers === false && userWantSpecial === true) {
     var characterSelectionArray = [specialChar];    
 }
 // User selected the following: Lowercase, Uppercase
-else if (userWantUpperCase === true && userWantLowerCase === true) {
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === false && userWantSpecial === false) {
     var characterSelectionArray = [upperCaseChar, lowerCaseChar];    
 }
 // User selected the following: Lowercase, Numeric
-else if (userWantLowerCase === true && userWantNumbers === true) {
+else if (userWantLowerCase === true && userWantUpperCase === false && userWantNumbers === true && userWantSpecial === false) {
     var characterSelectionArray = [lowerCaseChar, numbersChar];    
 }
 // User selected the following: Lowercase, Special Characters
-else if (userWantLowerCase === true && userWantSpecial === true) {
+else if (userWantLowerCase === true && userWantUpperCase === false && userWantNumbers === false && userWantSpecial === true) {
     var characterSelectionArray = [lowerCaseChar, specialChar];    
 }
 // User selected the following: Uppercase, Numeric
-else if (userWantUpperCase === true && userWantNumbers === true) {
+else if (userWantLowerCase === false && userWantUpperCase === true && userWantNumbers === true && userWantSpecial === false) {
     var characterSelectionArray = [upperCaseChar, numbersChar];    
 }
 // User selected the following: Uppercase, Special Characters
-else if (userWantUpperCase === true && userWantSpecial === true) {
+else if (userWantLowerCase === false && userWantUpperCase === true && userWantNumbers === false && userWantSpecial === true) {
     var characterSelectionArray = [upperCaseChar, specialChar];    
 }
 // User selected the following: Numeric, Special Characters
-else if (userWantNumbers === true && userWantSpecial === true) {
+else if (userWantLowerCase === false && userWantUpperCase === false && userWantNumbers === true && userWantSpecial === true) {
     var characterSelectionArray = [numbersChar, specialChar];    
 }
 // User selected the following: Lowercase, Uppercase, Numeric
-else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === true) {
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === true && userWantSpecial === false) {
     var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar];    
 }
 // User selected the following: Lowercase, Uppercase, Special Characters
-else if (userWantLowerCase === true && userWantUpperCase === true && userWantSpecial === true) {
+else if (userWantLowerCase === true && userWantUpperCase === true && userWantNumbers === false && userWantSpecial === true) {
     var characterSelectionArray = [upperCaseChar, lowerCaseChar, specialChar];    
 }
 // User selected the following: Lowercase, Numeric, Special Characters
-else if (userWantLowerCase === true && userWantNumbers === true && userWantSpecial === true) {
+else if (userWantLowerCase === true && userWantUpperCase === false && userWantNumbers === true && userWantSpecial === true) {
     var characterSelectionArray = [lowerCaseChar, numbersChar, specialChar];    
 }
 // User selected the following: Uppercase, Numeric, Special Characters
-else if (userWantUpperCase === true && userWantNumbers === true && userWantSpecial === true) {
+else if (userWantLowerCase === false && userWantUpperCase === true && userWantNumbers === true && userWantSpecial === true) {
     var characterSelectionArray = [upperCaseChar, numbersChar, specialChar];    
 }
 // User selected the following: Lowercase, Uppercase, Numeric, Special Characters
