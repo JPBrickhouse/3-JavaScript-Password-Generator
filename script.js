@@ -46,18 +46,73 @@ for (i=0; i < initialArray.length; i++) {
 // The range corresponds to the possible index values of the variables in question
 // For example: dataV1.uppercase has a length of 26.
 // The random numbers will be between 0 and 25, inclusive.
-// That means I use that random number to select an index value from within that array
+// That means I use that random number to select a value from within that array
 // Done with assistance from Mozilla developer notes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 // Done with assstance from this Stack Overflow thread: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 var upperCaseRandom = Math.floor(Math.random() * Math.floor(dataV1.upperCase.length));
 var lowerCaseRandom = Math.floor(Math.random() * Math.floor(dataV1.lowerCase.length));
 var numbersRandom = Math.floor(Math.random() * Math.floor(dataV1.numbers.length));
 var specialRandom = Math.floor(Math.random() * Math.floor(dataV1.special.length));
-// Selecting an index value from within the array, using the random numbers generated above
+// Selecting a value from within the array, using the random numbers generated above
 var upperCaseChar = dataV1.upperCase[upperCaseRandom];
 var lowerCaseChar = dataV1.lowerCase[lowerCaseRandom];
 var numbersChar = dataV1.numbers[numbersRandom];
 var specialChar = dataV1.special[specialRandom];
+
+
+// User selected the following: Lowercase
+var characterSelectionArray = [lowerCaseChar];
+
+// User selected the following: Uppercase
+var characterSelectionArray = [upperCaseChar];
+
+// User selected the following: Numeric
+var characterSelectionArray = [numbersChar];
+
+// User selected the following: Special Characters
+var characterSelectionArray = [specialChar];
+
+// User selected the following: Lowercase, Uppercase
+var characterSelectionArray = [upperCaseChar, lowerCaseChar];
+
+// User selected the following: Lowercase, Numeric
+var characterSelectionArray = [lowerCaseChar, numbersChar];
+
+// User selected the following: Lowercase, Special Characters
+var characterSelectionArray = [lowerCaseChar, specialChar];
+
+// User selected the following: Uppercase, Numeric
+var characterSelectionArray = [upperCaseChar, numbersChar];
+
+// User selected the following: Uppercase, Special Characters
+var characterSelectionArray = [upperCaseChar, specialChar];
+
+// User selected the following: Numeric, Special Characters
+var characterSelectionArray = [numbersChar, specialChar];
+
+// User selected the following: Lowercase, Uppercase, Numeric
+var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar];
+
+// User selected the following: Lowercase, Uppercase, Special Characters
+var characterSelectionArray = [upperCaseChar, lowerCaseChar, specialChar];
+
+// User selected the following: Lowercase, Numeric, Special Characters
+var characterSelectionArray = [lowerCaseChar, numbersChar, specialChar];
+
+// User selected the following: Uppercase, Numeric, Special Characters
+var characterSelectionArray = [upperCaseChar, numbersChar, specialChar];
+
+// User selected the following: Lowercase, Uppercase, Numeric, Special Characters
+var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar, specialChar];
+
+
+
+
+// This function below will generate a random whole number within a range
+// The range corresponds to the possible index values of the variables in question
+var characterSelectRandom = Math.floor(Math.random() * Math.floor(characterSelectionArray.length));
+// Selecting a value from within the array, using the random number generated above
+var characterSelect = characterSelectionArray[characterSelectRandom];
 
 
 
