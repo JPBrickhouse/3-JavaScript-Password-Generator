@@ -1,5 +1,9 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+// var generateBtn = document.querySelector("#generate");
+
+
+
+
 
 
 // Initialize an OBJECT filled with ARRAYS corresponding to specific character types
@@ -26,9 +30,34 @@ var userWantNumbers = confirm("Do you want numeric characters? \n 1, 2, 3, etc. 
 var userWantSpecial = confirm("Do you want special characters? \n !, ?, #, etc. \n Okay for yes, cancel for no");
 
 // Initialize a blank array to store the random password characters
+// Done with assistance from this Stack Overflow thread: https://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar
 // The length of the array is set by the passwordLength variable, provided by the user
 // The earlier prompt stored passwordLength as a string, so it needs to be converted to a number
+// Done with assistance fro this Stack Overflow thread: https://stackoverflow.com/questions/1133770/how-to-convert-a-string-to-an-integer-in-javascript
 var initialArray = new Array(Number(passwordLength))
+
+
+// Proof that I can populate values within an array using a for loop
+for (i=0; i < initialArray.length; i++) {
+    initialArray[i]=i;
+}
+
+// These functions below will generate random whole numbers within a range
+// The range corresponds to the possible index values of the variables in question
+// For example: dataV1.uppercase has a length of 26.
+// The random numbers will be between 0 and 25, inclusive.
+// That means I use that random number to select an index value from within that array
+// Done with assistance from Mozilla developer notes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// Done with assstance from this Stack Overflow thread: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
+var upperCaseRandom = Math.floor(Math.random() * Math.floor(dataV1.upperCase.length));
+var lowerCaseRandom = Math.floor(Math.random() * Math.floor(dataV1.lowerCase.length));
+var numbersRandom = Math.floor(Math.random() * Math.floor(dataV1.numbers.length));
+var specialRandom = Math.floor(Math.random() * Math.floor(dataV1.special.length));
+// Selecting an index value from within the array, using the random numbers generated above
+var upperCaseChar = dataV1.upperCase[upperCaseRandom];
+var lowerCaseChar = dataV1.lowerCase[lowerCaseRandom];
+var numbersChar = dataV1.numbers[numbersRandom];
+var specialChar = dataV1.special[specialRandom];
 
 
 
