@@ -23,10 +23,10 @@ function generatePassword () {
     };
 
     // Prompt the users regarding what type of characters they would like to include
-    var userWantUpperCase = confirm("Do you want upper case characters? \n A, B, C, etc. \n Okay for yes, cancel for no");
-    var userWantLowerCase = confirm("Do you want lower case characters? \n a, b, c, etc. \n Okay for yes, cancel for no");
-    var userWantNumbers = confirm("Do you want numeric characters? \n 1, 2, 3, etc. \n Okay for yes, cancel for no");
-    var userWantSpecial = confirm("Do you want special characters? \n !, ?, #, etc. \n Okay for yes, cancel for no");
+    var userWantUpperCase = confirm("Do you want upper case characters? \n A, B, C, etc. \n Okay for YES, cancel for NO");
+    var userWantLowerCase = confirm("Do you want lower case characters? \n a, b, c, etc. \n Okay for YES, cancel for NO");
+    var userWantNumbers = confirm("Do you want numeric characters? \n 1, 2, 3, etc. \n Okay for YES, cancel for NO");
+    var userWantSpecial = confirm("Do you want special characters? \n !, ?, #, etc. \n Okay for YES, cancel for NO");
 
     // Initialize a blank array to store the random password characters
     // Done with assistance from this Stack Overflow thread: https://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar
@@ -121,7 +121,7 @@ function generatePassword () {
             var characterSelectionArray = [upperCaseChar, lowerCaseChar, numbersChar, specialChar];    
         }
         // User selected the following: NONE
-        // (Ends the program because the user has not selected ANY of the character options
+        // (Ends the program because the user has not selected ANY of the character options)
         else {
             break;
         }
