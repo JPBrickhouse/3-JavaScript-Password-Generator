@@ -20,10 +20,10 @@ The CSS file for this website was provided by the class, and remains untouched. 
 - In the HTML, a button had been created
 - Upon clicking the button, the "writePassword" function would run
 - Within the "writePassword" function, the following steps would occur:
-    -- The "generatePassword" function would run, outputting the variable "password"
-    -- The HTML document's textarea (which had an id = "password" and placeholder text of "Your Secure Password") would get assigned to the variable "passwordText"
-    -- Then, the variable "passwordText" would receive the value contained in the variable "password"
-    -- The value of the variable "passwordText" (aka, the generated password from the function "generatePassword") gets printed back on the HTML document in the textarea
+    - The "generatePassword" function would run, outputting the variable "password"
+    - Using a query selector, the HTML document's textarea (which had an id = "password" and placeholder text of "Your Secure Password") would get assigned to the variable "passwordText"
+    - Then, the variable "passwordText" would receive the value contained in the variable "password"
+    - The value of the variable "passwordText" (aka, the generated password from the function "generatePassword") gets printed back on the HTML document in the textarea
 #### Our task was to create the generatePassword function
 
 
