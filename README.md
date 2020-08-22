@@ -1,10 +1,10 @@
-# 3-JavaScript-Password-Generator
+# Password Generator
 
-## Homework 3 Introduction
+## Introduction
 Utilizing Javascript, we were tasked with creating a random password generator. Users would input a series of criteria – desired password length, inclusion of various alphanumeric character types, etc. – and the website would output a random password meeting those criteria.
 
 ## Deployed Application:
-### [https://jpbrickhouse.github.io/3-JavaScript-Password-Generator/](https://jpbrickhouse.github.io/3-JavaScript-Password-Generator/)
+### [https://jpbrickhouse.github.io/Password-Generator/](https://jpbrickhouse.github.io/Password-Generator/)
 
 ## Screenshots
 ### Prompt - Number of Characters
